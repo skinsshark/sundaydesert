@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:image" content="images/preview.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="image_src" href="images/preview.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>sunday desert</title>
+
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <div class="left">
+      <img src="./images/team.jpg" class="team" />
+      <div id="sz-face" class="faces"></div>
+      <div id="est-face" class="faces"></div>
+    </div>
+    <div class="right">
+      <h1>SUNDAY DESERT</h1>
+      <p>
+        <span class="us" id="sz" onmouseover="face(this)" onmouseout="lift(this)">
+          Sharon Zheng
+        </span> and
+        <span class="us" id="est" onmouseover="face(this)" onmouseout="lift(this)">
+          Esther Cheung
+        </span> are two girls who love tech and art, creating art with tech
+      </p>
+      <h2>Projects:</h2>
+      <ul>
+        <li><i>WIP: TBA!</i></li>
+        <li><a href="https://skinsshark.github.io/holiday-swim" target="_blank">Holiday Swim</a></li>
+        <li><a href="http://ie-fish.tk" target="_blank">the Illustrated Encyclopedia of Fish</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const sface = document.getElementById('sz-face');
+    const eface = document.getElementById('est-face');
+
+    function face(e) {
+      if (e.id === 'sz') {
+        sface.style.display = 'block';
+      } else {
+        eface.style.display = 'block';
+      }
+    }
+
+    function lift(e) {
+      if (e.id === 'sz') {
+        sface.style.display = 'none';
+      } else {
+        eface.style.display = 'none';
+      }
+    }
+
+  </script>
+
+</body>
+</html>

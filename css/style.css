@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+h1, h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  transition: 0.5s linear all;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+p, ul {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited,
+a:active,
+.us {
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 2px solid #000;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+.us {
+  cursor: pointer;
+}
+
+ul {
+  line-height: 26px;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left,
+.right {
+  width: 50vw;
+  padding: 60px;
+}
+
+.left {
+  padding-right: 0;
+  position: relative;
+  width: 40%;
+}
+
+.team {
+  width: 100%;
+}
+
+.faces {
+  display: none;
+  position: absolute;
+  left: 42%;
+  top: 22%;
+  width: 9vw;
+  height: 9vw;
+  border-radius: 50%;
+  border: 3px solid magenta;
+  transition: 0.8s linear all;
+}
+
+#est-face {
+  left: 34%;
+  top: 40%;
+  border-color: gold;
+}
+
+@media only screen and (max-width: 1000px) {
+  .faces {
+    width: 8vw;
+    height: 8vw;
+    left: 45%;
+    top: 24%;
+    border-color: steelblue;
+  }
+
+  #est-face {
+    left: 38%;
+    top: 42%;
+    border-color: orange;
+  }
+}
+
+@media only screen and (max-width: 867px) {
+  .faces {
+    left: 46%;
+    top: 25%;
+    border-color: teal;
+  }
+
+  #est-face {
+    left: 39%;
+    top: 42%;
+    border-color: salmon;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .faces {
+    left: 47%;
+    top: 26%;
+  }
+
+  #est-face {
+    left: 41%;
+    top: 42%;
+    border-color: salmon;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  .faces {
+    width: 18vw;
+    height: 18vw;
+    left: 36%;
+    top: 21%;
+  }
+
+  #est-face {
+    left: 28%;
+    top: 44%;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  p, ul {
+    font-size: 16px;
+  }
+
+  .page-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .left {
+    padding: 30px 30px 0;
+    width: 90%;
+  }
+
+  .right {
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  ul {
+    line-height: 22px;
+  }
+}
