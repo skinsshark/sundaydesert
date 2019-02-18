@@ -2,40 +2,219 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <link rel="image_src" href="https://66.media.tumblr.com/9d96793ccca2d39ff11c5defe5b8a99d/tumblr_pn51qzyvOi1uyl5nso1_500.png" />
+    <link rel="og:image" href="https://66.media.tumblr.com/9d96793ccca2d39ff11c5defe5b8a99d/tumblr_pn51qzyvOi1uyl5nso1_500.png" />
     <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta property="og:image" content="images/preview.png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/skinsshark/skinsshark.github.io/master/app/images/sundaydesert.png">
 
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="image_src" href="images/preview.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/skinsshark/sundaydesert/master/images/favicon.ico">
+    <link rel="image_src" href="https://raw.githubusercontent.com/skinsshark/skinsshark.github.io/master/app/images/sundaydesert.png">
+
+
 
     <title>sunday desert</title>
+    
+    <style type="text/css">
+        .iframe-controls-container {
+            display: none !important;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: 'Rubik', sans-serif;
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          height: 90vh;
+        }
+        
+        h1, h2 {
+          font-size: 30px;
+          letter-spacing: 2px;
+          transition: 0.5s linear all;
+        }
+        
+        h2 {
+          font-size: 22px;
+        }
+        
+        p, ul {
+          font-size: 18px;
+          letter-spacing: 1px;
+          line-height: 25px;
+        }
+        
+        a,
+        a:hover,
+        a:focus,
+        a:visited,
+        a:active,
+        .us {
+          color: #000;
+          text-decoration: none;
+          padding-bottom: 1px;
+          border-bottom: 2px solid #000;
+        }
+        
+        a:hover {
+          font-style: italic;
+        }
+        
+        .us {
+          cursor: pointer;
+        }
+        
+        ul {
+          line-height: 26px;
+        }
+        
+        .page-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .left,
+        .right {
+          width: 50vw;
+          padding: 60px;
+        }
+        
+        .left {
+          padding-right: 0;
+          position: relative;
+          width: 40%;
+        }
+        
+        .team {
+          width: 100%;
+        }
+        
+        .faces {
+          display: none;
+          position: absolute;
+          left: 42%;
+          top: 22%;
+          width: 9vw;
+          height: 9vw;
+          border-radius: 50%;
+          border: 3px solid magenta;
+          transition: 0.8s linear all;
+        }
+        
+        #est-face {
+          left: 34%;
+          top: 40%;
+          border-color: gold;
+        }
+        
+        @media only screen and (max-width: 1000px) {
+          .faces {
+            width: 8vw;
+            height: 8vw;
+            left: 45%;
+            top: 24%;
+            border-color: steelblue;
+          }
+        
+          #est-face {
+            left: 38%;
+            top: 42%;
+            border-color: orange;
+          }
+        }
+        
+        @media only screen and (max-width: 867px) {
+          .faces {
+            left: 46%;
+            top: 25%;
+            border-color: teal;
+          }
+        
+          #est-face {
+            left: 39%;
+            top: 42%;
+            border-color: salmon;
+          }
+        }
+        
+        @media only screen and (max-width: 767px) {
+          .faces {
+            left: 47%;
+            top: 26%;
+          }
+        
+          #est-face {
+            left: 41%;
+            top: 42%;
+            border-color: salmon;
+          }
+        }
+        
+        @media only screen and (max-width: 667px) {
+          .faces {
+            width: 18vw;
+            height: 18vw;
+            left: 36%;
+            top: 21%;
+          }
+        
+          #est-face {
+            left: 28%;
+            top: 44%;
+          }
+        }
+        
+        @media only screen and (max-width: 667px) {
+          p, ul {
+            font-size: 16px;
+          }
+        
+          .page-wrapper {
+            flex-wrap: wrap;
+          }
+        
+          .left {
+            padding: 30px 30px 0;
+            width: 90%;
+          }
+        
+          .right {
+            width: 100%;
+            padding-top: 15px;
+          }
+        
+          ul {
+            line-height: 22px;
+          }
+        }
+    </style>
 
 </head>
 <body>
 
   <div class="page-wrapper">
     <div class="left">
-      <img src="./images/team.jpg" class="team" />
+      <img src="https://raw.githubusercontent.com/skinsshark/sundaydesert/master/images/team.jpg" class="team" />
       <div id="sz-face" class="faces"></div>
       <div id="est-face" class="faces"></div>
     </div>
     <div class="right">
       <h1>SUNDAY DESERT</h1>
       <p>
-        <span class="us" id="sz" onmouseover="face(this)" onmouseout="lift(this)">
-          Sharon Zheng
-        </span> and
-        <span class="us" id="est" onmouseover="face(this)" onmouseout="lift(this)">
-          Esther Cheung
-        </span> are two girls who love tech and art, creating art with tech
+        <span class="us" id="sz" onmouseover="face(this)" onmouseout="lift(this)">Sharon Zheng</span> and <span class="us" id="est" onmouseover="face(this)" onmouseout="lift(this)">Esther Cheung</span> are two girls who love tech and art, creating art with tech. With the design minds of both, Sharon leads all development and Esther crafts every illustration
       </p>
       <h2>Projects:</h2>
       <ul>
-        <li><i>WIP: TBA!</i></li>
-        <li><a href="https://holiday.ie-fish.stream/" target="_blank">Holiday Swim</a></li>
+        <li><a href="http://iloveyouandyoulove.me/#/" target="_blank">ILY&YLM</a></li>
+        <li><a href="http://holiday.ie-fish.stream/" target="_blank">Holiday Swim</a></li>
         <li><a href="http://ie-fish.stream/" target="_blank">the Illustrated Encyclopedia of Fish</a></li>
       </ul>
     </div>
